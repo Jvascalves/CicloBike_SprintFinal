@@ -1,0 +1,200 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+body {
+    /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main > .container {
+}
+
+.form-mapa {
+    box-shadow: 0px 2px 30px lightgrey;
+    z-index: 1;
+    position: relative;
+    height: 100px;
+}
+
+#map {
+    /* margin-top: 10px; */
+    /* height: 300px;  */
+
+    width: 100%;
+    height: 100%;
+    background: orange;
+}
+/* Optional: Makes the sample page fill the window. */
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+    border-color: #4d90fe;
+}
+
+#mode-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.mapa {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+body.form-open .mapa {
+    height: calc(100vh - 100px);
+    transition: 0.5s;
+}
+body.nav-open .mapa {
+    height: 100vh;
+}
+
+body.nav-open .form-mapa {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+body {
+    overflow: hidden;
+}
+
+.rounded {
+    border-radius: 50px !important;
+}
+.btn.btn-block {
+    width: 100%;
+}
+
+/*
+    Lista de Favoritos
+*/
+
+ul#listaLocais li {
+    cursor: pointer;
+    /* justify-content: space-between; */
+}
+ul#listaLocais li.list-group-item {
+    padding: 10px;
+}
+ul#listaLocais li:hover {
+    background: #f1f1f1;
+}
+
+ul#listaLocais li button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    align-items: center;
+}
+ul#listaLocais li .btn-rota {
+    width: calc(100% - 60px);
+}
+ul#listaLocais li .btn-deleta {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.para-onde button {
+    margin-top: 13px;
+}
+
+.btn.detalhes-rota,
+.btn.favoritos {
+    position: fixed;
+    left: 20px;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 2px 5px 12px #555;
+    transition: transform ease 0.4s;
+}
+.btn.detalhes-rota i,
+.btn.favoritos i {
+    color: #fff;
+    font-size: 26px;
+}
+.btn.detalhes-rota:disabled,
+.btn.favoritos:disabled {
+    background: grey;
+    opacity: 0.4;
+}
+
+.btn.detalhes-rota.hide,
+.btn.favoritos.hide {
+    transform: translateX(-120px);
+}
+
+.btn.favoritos {
+    bottom: 10%;
+    background: green;
+}
+
+.btn.detalhes-rota {
+    bottom: calc(10% + 80px);
+    background: rebeccapurple;
+}
+
+#favoritar:disabled {
+    opacity: 0.5;
+}
+
+#favoritar:disabled i {
+    color: grey !important;
+}
+
+.btn.iniciar-navegacao,
+.btn.encerrar-navegacao {
+    color: #fff;
+    font-size: 1.3rem;
+    position: fixed;
+    bottom: 50px;
+    z-index: 4;
+    border-radius: 40px;
+    transition: ease 0.4s transform;
+    transform: translateY(0);
+    left: calc(50% - 100px);
+    width: 200px;
+    box-shadow: 2px 5px 12px #555;
+}
+
+.btn.iniciar-navegacao {
+    background: green;
+}
+
+.btn.encerrar-navegacao {
+    background: rgb(181, 7, 7);
+}
+
+.btn.iniciar-navegacao:disabled {
+    transform: translateY(100px);
+}
+.btn.encerrar-navegacao:disabled {
+    transform: translateY(100px);
+}
