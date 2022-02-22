@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>CicloBike</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous"
+        />
+
+        <!-- Custom styles for this template -->
+
+        <link href="css/signin.css" rel="stylesheet" />
+
+        <style>
+            .form-control {
+                width: 240px;
+            }
+            .form-label {
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                    sans-serif;
+                text-align: left;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body class="text-center">
+        <header>
+            <img
+                class="mb-4"
+                src="imagem/ciclo-bike-logo-branca.png"
+                alt=""
+                width="100"
+                height="100"
+            />
+        </header>
+
+        <main class="form-signin">
+            <form class="cadastro">
+                <h1>Cadastre-se</h1>
+
+                <div id="nome">
+                    <h6 class="form-label">Nome completo</h6>
+                    <input
+                        type="text"
+                        class="form-control"
+                        required="required"
+                        id="nameRegistro"
+                    />
+                </div>
+                <div id="Senha">
+                    <h6 class="form-label">Senha</h6>
+                    <input
+                        type="password"
+                        class="form-control"
+                        required="required"
+                        id="senha"
+                    />
+                </div>
+                <div id="Confirma Senha">
+                    <h6 class="form-label">Confirma</h6>
+                    <input
+                        type="password"
+                        class="form-control"
+                        required="required"
+                        id="confirmasenha"
+                    />
+                </div>
+
+                <div id="Telefone">
+                    <h6 class="form-label">Seu Peso (em Kg)</h6>
+                    <input
+                        type="tel"
+                        class="form-control"
+                        required="required"
+                        id="peso"
+                        maxlength="11"
+                    />
+                </div>
+                <div id="E-mail">
+                    <h6 class="form-label">Login</h6>
+                    <input
+                        type="email"
+                        class="form-control"
+                        required="required"
+                        id="email"
+                    />
+                </div>
+                <input
+                    type="button"
+                    id="salvar"
+                    class="btn btn-success d-block my-3 w-100"
+                    value="Cadastrar"
+                />
+                <a class="btn d-block my-3 w-100" href="index.html">Logar</a>
+                <script src="script.js"></script>
+            </form>
+        </main>
+    </body>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+    ></script>
+</html>

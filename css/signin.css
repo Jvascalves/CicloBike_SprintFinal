@@ -1,0 +1,229 @@
+body {
+    height: 100%;
+}
+
+body {
+    display: block;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #c4c4c4;
+}
+
+.form-signin {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+h1 {
+    font-size: 30px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 20px;
+}
+
+button {
+    width: 240px;
+    height: 36px;
+    left: 57px;
+    top: 397px;
+    background-color: #3c9455;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+button > a {
+    text-emphasis: none;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+.input-group {
+    width: 240px;
+    margin: 5px 5px;
+}
+
+span {
+    height: 36px;
+}
+a {
+    margin-bottom: 30px;
+}
+img {
+    width: 104px;
+    height: 104px;
+    margin: 30px 100px;
+}
+
+@keyframes fade-out {
+    0%,
+    85% {
+        height: 100%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        /* height:0; */
+    }
+}
+
+/*** social button ***/
+
+.social-button {
+    background-position: 25px 0px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 36px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 240px;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: rgb(255, 255, 255) none 0px;
+    transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    line-height: 31px;
+}
+#facebook-connect {
+    background: #3c9455
+        url("https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook.svg?sanitize=true")
+        no-repeat scroll 5px -6px / 30px 50px padding-box border-box;
+    border: 1px solid rgb(60, 90, 154);
+}
+#facebook-connect:hover {
+    border-color: rgb(60, 90, 154);
+    background: rgb(60, 90, 154)
+        url("https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook-white.svg?sanitize=true")
+        no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
+}
+
+#facebook-connect span {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#facebook-connect:hover span {
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#google-connect {
+    background: #3c9455
+        url("https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus.png")
+        no-repeat scroll 0px -7px / 50px 50px padding-box border-box;
+    border: 1px solid rgb(220, 74, 61);
+}
+
+#google-connect:hover {
+    border-color: rgb(220, 74, 61);
+    background: rgb(220, 74, 61)
+        url("https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus-white.png")
+        no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
+}
+
+#google-connect span {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#google-connect:hover span {
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn-google {
+    color: white;
+    background-color: #ea4335;
+}
+
+.btn-facebook {
+    color: white;
+    background-color: #3b5998;
+}
+
+.splash {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #3c9455;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animaSplah 3s ease 2s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes animaSplah {
+    0% {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    80% {
+        opacity: 0;
+        z-index: 10;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
